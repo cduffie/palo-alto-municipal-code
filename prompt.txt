@@ -1,0 +1,29 @@
+ Good morning. I'm a resident of Palo Alto. At a recent debate for city council candidates, one candidate suggested that we should have an LLM go through our municipal code and point out places where differences between it and neighboring cities' were inhibitory to development.
+
+  I'd like you to take on this task.
+
+  Your goal is to produce a technical document clearly and succinctly detailing which specific regulations in the Palo Alto municipal code are both relevant to development (e.g., new residential or commercial construction, plumbing work, solar panel installation, etc.), and differ materially from nearby cities' regulations. I recommend for each such piece of the code, quoting the relevant language in both the Palo Alto code and representative language in other cities' codes, summarizing clearly and succinctly the regulation and the difference, giving a qualitative assessment of the salience of the difference to development in the city, and when particularly relevant giving any context around the difference (such as recent or upcoming changes to any of the regulations).
+
+  The report should be quickly and easily understandable by a member of the public, city staff, or city council, and should cite sufficient sources to be easily trusted without relying on your analysis (though I do trust you to do good analysis!). It should serve as a reference to specific regulatory differences and should allow one to quickly understand those differences and learn where to look for more information. It should be an aide to humans in forming opinions on the merits of changes to the municipal code. It should not itself propose changes or offer opinions on potential changes.
+
+  Where Palo Alto's regulation is materially more permissive than most nearby cities, when the directional effect is unclear, or when there are material effects in both directions, please include the examples in the report making it readily apparent to readers quickly scanning the report the direction of the effect of the difference. When you're confident that the differences in regulation present no material effect on development in the city, please exclude them from the report.
+
+  Stylistically, please use your judgment to best fulfil the goals described above. Use the text editor of your choice (latex, word, etc.). Use footnotes, appendices, and extra materials where appropriate and when they enhance clarity and readability. Style it as a technical report. Write clearly and succinctly. To the extent possible, please try to avoid 'LLM-isms'.
+
+  I believe you have good judgment about how best to design and produce this document for the purpose it should serve. Where your best judgment differs from anything I said or implied, please ask me rather than just following exactly what I asked for. Where I left anything unclear, please exercise your judgment liberally. I'm happy to discuss design choices with you.
+
+  For your plan, I recommend starting by locating and downloading Palo Alto's municipal code as well as those of San Jose, Santa Clara, Sunnyvale, Mountain View, Los Altos, Menlo Park, Redwood City. In addition the Santa Clara County and San Mateo County codes as well as some California state laws may be relevant. Note that of the cities named above, Menlo Park and Redwood City are in San Mateo County while the others (including Palo Alto) are in Santa Clara County.
+
+  I think you should use subagents for this project. My best guess for the best way to use them is to assign one Haiku 5.5 agent to each chapter of Palo Alto's municipal code. They should:
+  1. Assess whether that chapter has any bearing on development in the city, and if not, stop. Otherwise,
+  2. Locate and read analogous sections of the other cities' municipal codes, as well as any relevant other content from them or from county or state laws.
+  3. For each piece (section, subsection, ...) of the chapter that is relevant to development in the city and differs from any of the other jurisdictions' codes, summarize and quote the differences across all jurisdictions.
+  4. Assess whether the difference materially affects development in the city compared to the other nearby cities.
+  5. For each piece, write an entry for the report, fulfilling the goals described above (a qualitative assessment of the salience of the difference, the direerence on ease of development in the city,sources, citations and footnotes, etc.). I imagine you should design or produce a style guide the subagents can follow.
+  I think your job should be to collate the subagents' reports, review them for style and correctness, and write an introduction that helps the reader understand the report. You'll be responsible for ensuring the quality of the final product.
+
+  If that description of your working plan differs from how you think you should go about it in any way, I trust you to have a better idea of how you will work most successfully and you should do what you think is best. You understand how you work well better than I do.
+
+  Again, I trust your judgment. If you feel toject would be better if it differs from myspecifications or plan above, please trust your judgment.
+
+  Thanks very much.
