@@ -1,0 +1,48 @@
+\documentclass[11pt]{article}
+\input{preamble}
+\input{gen/stats}
+
+\begin{document}
+
+% ---------------------------------------------------------------- title page
+\begin{titlepage}
+\sffamily
+\vspace*{1.2in}
+{\color{accent}\rule{\linewidth}{1.2pt}}\par\vspace{14pt}
+{\Huge\bfseries\color{ink} Palo Alto's Development Regulations\\[4pt] Compared with Nearby Cities\par}
+\vspace{12pt}
+{\Large\color{ink} Provisions of the Palo Alto Municipal Code that bear on construction and development and differ materially from those of neighboring jurisdictions\par}
+\vspace{14pt}
+{\color{accent}\rule{\linewidth}{1.2pt}}\par
+\vspace{24pt}
+{\large Technical reference\quad·\quad Codes current as of early October 2026\par}
+\vspace{10pt}
+{\large Prepared by Claude Opus 5.5 (Anthropic)\par}
+{\normalsize\color{dirUcol} with Claude Sonnet 5.5 and Claude Haiku 5.5 research and fact-checking agents\par}
+\vspace{14pt}
+{\small\color{dirUcol} Prepared at the request of Cornelius Duffie.\\ Questions and corrections: \href{mailto:cornelius.duffie@gmail.com}{cornelius.duffie@gmail.com}\par}
+\vfill
+{\small\color{dirUcol}
+Comparison jurisdictions: San José, Santa Clara, Sunnyvale, Mountain View, Los Altos, Menlo Park and Redwood City, with Santa Clara County, San Mateo County and California state law as secondary references.\par\medskip
+This report describes regulatory differences and their likely direction and size of effect on development. It does not recommend changes to any regulation.\par}
+\end{titlepage}
+
+% ---------------------------------------------------------------- contents
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+% ---------------------------------------------------------------- front matter
+\input{front}
+
+% ---------------------------------------------------------------- entries
+\input{gen/sections}
+
+% ---------------------------------------------------------------- appendices
+\clearpage
+\appendix
+\renewcommand{\thesection}{\Alph{section}}
+\input{appendices}
+
+\end{document}
